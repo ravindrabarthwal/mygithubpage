@@ -5,10 +5,11 @@
     <title>Ravindra Barthwal - Thee JS Guy</title>
     <meta name=viewport content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Lato:400,900,700|Leckerli One' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="css/font.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.1/jquery.fullPage.min.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <style type="text/css">
+      .heading,.heading2{text-transform:uppercase}#home,.left-div-about,.right-div-about{height:100vh}#about-me,#home{width:100%}body{margin:0!important;font-family:Lato,sans-serif}#home{background:url(img/bg.png) center no-repeat}.home-div{margin-top:10%}.white-bg{background-color:#FFFFF3;padding:10px 0;color:#000}.heading{letter-spacing:10px}.title{font-weight:700}.heading2{font-family:'Leckerli One',cursive;letter-spacing:5px}.heart{color:#E53A40}.left-div-about{background-color:#f7ee82}.right-div-about{background-color:#e0e3da}.js{line-height:90vh;z-index:1;font-size:15em;color:#383A3F}.hell{color:#3E4348;word-spacing:3px;margin:10% 0}p{font-size:1.1em;line-height:200%}.social{font-size:3em}.social:hover{text-decoration:none!important}
+    </style>
   </head>
   <body>
 
@@ -76,5 +77,18 @@
           });
       });
     </script>
+    <script type="text/javascript">
+      WebFontConfig = {
+        google: { families: [ 'Leckerli+One::latin', 'Lato:700,400:latin' ] }
+      };
+      (function() {
+        var wf = document.createElement('script');
+        wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+      })();
+      </script>
   </body>
 </html>
