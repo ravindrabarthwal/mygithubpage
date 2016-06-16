@@ -3,16 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>Ravindra Barthwal - Thee JS Guy</title>
-
+    <meta name=viewport content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link href='https://fonts.googleapis.com/css?family=Lato:400,900,700|Leckerli One' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="css/font.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.1/jquery.fullPage.min.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
   </head>
   <body>
 
-    <section id="home">
-      <div class="container">
+<div id="fullpage">
+    <div class="section">
+      <section id="home">
+      <div class="container-fluid">
         <div class="row home-div">
           <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 col-lg-4 col-lg-offset-4">
 
@@ -38,11 +41,40 @@
         </div>
       </div>
     </section>
+    </div>
+    <div class="section">
+      <section id="about-me">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="hidden-xs col-sm-6 col-md-6 col-lg-6 left-div-about">
+              <h1 class="text-center js">RJS</h1>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 right-div-about">
+              <h1 class="text-center text-uppercase text-underline hell">Who The Hell IS <u>Ravindra</u> ?</h1>
+              <p>Hello Guys, I am Ravindra Barthwal JavaScript Passionate from <mark>India</mark>. Over 4 years in web development and computer programming, last year(2015),I realized the power of JS and it make me crazy to deeply learning it. After knowing the power of this tiny looking language i fall in love with it, It's Damn Awesome.</p>
 
+              <p>Beside programming, I loves to help other guys facing JS problems, learning and exploring the MEAN stack. You can connect me on social media and I will be happy to have you in my list. <br><br>Cheers Guys....</p>
+
+              <div class="row">
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 text-center"><a href="https://twitter.com/ravindra_js" class="social" target="_blank"><span class="icon-twitter"></span></a></div>
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 text-center"><a href="https://linkedin.com/in/ravindrabarthwal" class="social" target="_blank"><span class="icon-linkedin"></span></a></div>
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 text-center"><a href="https://github.com/ravindrabarthwal" class="social" target="_blank"><span class="icon-github_badge"></span></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      </div>
+</div>
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
-    <script type="text/javascript" src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.1/jquery.fullPage.min.js"></script>
+    <script>
+      $(document).ready(function() {
+          $('#fullpage').fullpage({
+            paddingTop: '0em',
+            paddingBottom: '0px',
+          });
+      });
+    </script>
   </body>
 </html>
